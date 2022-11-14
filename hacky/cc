@@ -1,0 +1,5 @@
+#!/bin/sh
+echo "$@" > /tmp/logg.txt
+echo --- > /tmp/logg.txt
+# I hate this, but it gets the job done
+/usr/bin/cc $@ -lstdc++
