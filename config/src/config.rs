@@ -21,7 +21,7 @@ use std::path::PathBuf;
 
 use core::config::MinerConfig;
 use core::MinerError;
-use cuckoo::PluginConfig;
+//use cuckoo::PluginConfig;
 use toml;
 use types::{ConfigError, ConfigMembers, GlobalConfig};
 use util::{LoggingConfig, LOGGER};
