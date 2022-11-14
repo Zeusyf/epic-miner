@@ -89,7 +89,7 @@ impl RxMiner {
 	fn create_rx_state(config: &RxConfig) -> Arc<RwLock<RxState>> {
 		let mut rx_state = RxState::new();
 
-		rx_state.full_mem = true;
+		rx_state.full_mem = false;
 
 		rx_state.hard_aes = config.hard_aes;
 		rx_state.large_pages = config.large_pages;
