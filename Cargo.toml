@@ -14,10 +14,9 @@ members = ["config", "util", "plugin"]
 
 [features]
 default = ["cpu"]
-opencl = ["ocl_cuckatoo", "progpow_miner_opencl", "progpow_opencl"]
-cuda = ["progpow_miner_cuda", "progpow_cuda", "cuckoo_miner_cuda"]
-cpu = ["cuckoo_miner"]
-
+#opencl = ["ocl_cuckatoo", "progpow_miner_opencl", "progpow_opencl"]
+#cuda = ["progpow_miner_cuda", "progpow_cuda", "cuckoo_miner_cuda"]
+cpu = []
 
 [[bin]]
 name = "epic-miner"
@@ -57,20 +56,6 @@ cursive = "0.12"
 [[test]]
 name = "cucumber"
 harness = false
-
-[dependencies.cuckoo_miner_cuda]
-package = "cuckoo_miner"
-path = "./cuckoo-miner"
-version = "1.0.2"
-features = ["build-cuda-plugins"]
-optional = true
-
-[dependencies.cuckoo_miner]
-package = "cuckoo_miner"
-path = "./cuckoo-miner"
-version = "1.0.2"
-features = []
-optional = true
 
 [dependencies.progpow_miner_opencl]
 package = "progpow_miner"
