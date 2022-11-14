@@ -13,7 +13,7 @@ pub struct RxConfig {
 	#[serde(default = "default_threads")]
 	pub threads: u64,
 	#[serde(default = "default_rx_bool")]
-	pub jit: bool,
+        pub full_mem: bool,
 	#[serde(default = "default_rx_bool")]
 	pub hard_aes: bool,
 	#[serde(default = "default_rx_bool")]
@@ -31,6 +31,7 @@ fn default_rx_bool() -> bool {
 impl Default for RxConfig {
 	fn default() -> Self {
 		RxConfig {
+			full_mem: true,
 			jit: true,
 			hard_aes: true,
 			large_pages: false,
