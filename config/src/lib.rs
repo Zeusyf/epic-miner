@@ -30,7 +30,7 @@ extern crate slog;
 
 extern crate epic_miner_core as core;
 extern crate epic_miner_util as util;
-extern crate cuckoo_miner as cuckoo;
+//extern crate cuckoo_miner as cuckoo;
 
 mod config;
 mod types;
